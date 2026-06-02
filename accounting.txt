@@ -1,0 +1,6 @@
+@echo off
+cd /d D:\Python\accounting
+start /B .venv\Scripts\python.exe -m streamlit run app.py
+timeout /t 3 /nobreak > NUL
+start http://localhost:8501
+exit
